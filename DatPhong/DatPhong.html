@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Đặt phòng</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="import" href="Header.html">
+    <link rel="import" href="Footer.html">
+  </head>
+
+  <body>
+    <iframe src="Header.html" width="100%" height="200px">
+    </iframe>
+    
+    <h2>Các loại phòng</h2>
+    <div>
+      <a href="SingleRoom.html">Single Room</a>
+      <br>
+      <a href="TwinRoom.html">Twin Room</a>
+      <br>
+      <a href="DoubleRoom.html">Double Room</a>
+      <br>
+      <a href="FamilyRoom.html">Family Room</a>
+    </div>
+
+
+    <h2>Đặt phòng</h2>
+    <div>
+      <label>Họ tên</label>
+      <br>
+      <input type="text" name="hoten" placeholder="Nguyễn Văn A" class="input">
+      <br>
+      <label>Email</label>
+      <br>
+      <input type="text" name="email" placeholder="nguyenvana@gmail.com" class="input">
+      <br>
+      <label>Số điện thoại</label>
+      <br>
+      <input type="text" name="sdt" placeholder="0123456789" class="input">
+      <br>
+      <label>Địa chỉ</label>
+      <br>
+      <input type="text" name="diachi" placeholder="Số 2 Lê Thanh Nghị..." class="input">
+      <br>
+      <label>Check-in</label>
+      <br>
+      <input type="datetime-local" name="checkin" class="input">
+      <br>
+      <label>Check-out</label>
+      <br>
+      <input type="datetime-local" name="checkout" class="input">
+      <br>
+      <label>Số lượng khách</label>
+      <br>
+      <input type="text" name="soluongkhach" placeholder="1" class="input">
+      <br>
+      <label>Kiểu phòng</label>
+      <br>
+      <select name="kieuphong">
+        <option value="single">Single Room</option>
+        <option value="twin">Twin Room</option>
+        <option value="double">Double Room</option>
+        <option value="family">Family Room</option>
+      </select>
+      <br>
+      <label>Ghi chú</label>
+      <br>
+      <input type="text" name="input" placeholder="1 khách là trẻ con" class="input">
+    </div>
+    <br>
+
+    <div>
+      <button type="button" name="datphong" class="button"> Đặt phòng</button>
+    </div>
+    <br>
+
+    <iframe src="Footer.html" width="100%" height="200px">
+    </iframe>
+    <script src="js/Hotel.js">
+    </script>
+  </body>
+</html>
