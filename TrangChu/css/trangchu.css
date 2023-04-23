@@ -1,0 +1,8 @@
+body{
+    font-family: Misa font;
+}
+
+@font-face {
+    font-family: Misa font;
+    src: url(../Asets/font/GoogleSans-Regular.otf);
+}
