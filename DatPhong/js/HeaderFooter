@@ -1,0 +1,31 @@
+// Define the HTML code for the header
+var headerHTML = '<div id="header">This is the header</div>';
+
+// Insert the header into the page
+document.body.insertAdjacentHTML('afterbegin', headerHTML);
+
+// Define the HTML code for the footer
+var footerHTML = '<div id="footer">This is the footer</div>';
+
+// Insert the footer into the page
+document.body.insertAdjacentHTML('beforeend', footerHTML);
+
+// Load the header
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    document.getElementById("header").innerHTML = this.responseText;
+  }
+};
+xhr.open("GET", "header.html", true);
+xhr.send();
+
+// Load the footer
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    document.getElementById("footer").innerHTML = this.responseText;
+  }
+};
+xhr.open("GET", "footer.html", true);
+xhr.send();
