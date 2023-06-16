@@ -11,6 +11,7 @@ body {
   /* header */
   
   .header {
+    font-family: Helvetica, sans-serif;
     background-color: #fff;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     position: fixed;
@@ -142,6 +143,7 @@ body {
 
 /* footer */
 .footer{
+    font-family: Helvetica, sans-serif;
     background-color: #000000;
     color: #fff;
     text-align: center;
@@ -219,16 +221,17 @@ body {
 /* dich vụ */
 .tt 
 {
+    font-family: Helvetica, sans-serif;
     padding-top: 300px;
     text-align: center;
     color:#ffffff
 }
 .dich_vu {
+    font-family: Helvetica, sans-serif;
     text-align: center;
     margin: 40px 0 40px;
     text-align: center;
     font-size: 10px;
     color: #ffffff;
-    font-family: Helvetica, sans-serif;
   }
 
