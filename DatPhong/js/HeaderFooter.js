@@ -33,8 +33,9 @@ xhr.send();
 var styles = `
 body {
   margin-top: 70px;
-  min-height: 100vh;
-  margin-bottom: -300px; /* Set this value to be equal to the height of your footer */
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
 }
 
 a {
@@ -55,6 +56,7 @@ a {
   position: fixed;
   width: 100%;
   z-index: 3;
+  height: 60px;
 }
 
 .header ul {
@@ -186,7 +188,6 @@ a {
   color: #fff;
   text-align: center;
   width: 100%;
-  height: 300px; /* Set this value to be equal to the height of your footer */
 }
 .footer-container{
   width: 85vw;

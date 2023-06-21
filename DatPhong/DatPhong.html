@@ -9,16 +9,10 @@
 </head>
 
 <body>
-  <h2>Các loại phòng</h2>
-  <div>
-    <a href="SingleRoom.html">Single Room</a>
-    <br>
-    <a href="TwinRoom.html">Twin Room</a>
-    <br>
-    <a href="DoubleRoom.html">Double Room</a>
-    <br>
-    <a href="FamilyRoom.html">Family Room</a>
-  </div>
+  <h1>Đặt phòng</h1>
+  <a href="DanhSachPhong.html">
+    <h2>Danh sách các phòng</h2>
+  </a>
 
 
   <div class="container">
@@ -92,7 +86,18 @@
       <div class="row">
 
         <div class="col-25">
-          <label for="soluongkhach">Số lượng khách</label>
+          <label for="soluongkhach">Số lượng người lớn</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="soluongkhach" id="soluongkhach" placeholder="1" class="input">
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-25">
+          <label for="soluongkhach">Số lượng trẻ em</label>
         </div>
         <div class="col-75">
           <input type="text" name="soluongkhach" id="soluongkhach" placeholder="1" class="input">
@@ -113,6 +118,21 @@
           </select>
         </div>
       </div>
+      <br>
+      <div class="row">
+        <div class="col-25">
+          <label>Dịch vụ</label>
+        </div>
+        <div class="col-75">
+          <input type="checkbox" name="option1" value="option1"> Đặt đồ ăn lên phòng<br>
+          <input type="checkbox" name="option2" value="option2"> Giặt đồ<br>
+          <input type="checkbox" name="option3" value="option3"> Tổ chức sự kiện<br>
+          <input type="checkbox" name="option1" value="option1"> Đi tour<br>
+          <input type="checkbox" name="option2" value="option2"> Thuê xe<br>
+          <input type="checkbox" name="option3" value="option3"> Combo tour<br>
+        </div>
+      </div>
+      <br>
 
       <div class="row">
         <div class="col-25">
