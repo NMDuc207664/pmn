@@ -263,3 +263,5 @@ styleElement.innerHTML = styles;
 
 // Append the style element to the head of the page
 document.head.appendChild(styleElement);
+
+

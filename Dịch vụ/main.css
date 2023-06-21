@@ -1,13 +1,23 @@
 body {
     margin: 0;
     font-family: Helvetica, sans-serif;
-    background-color: #d14747;
+    text-indent: 10px;
   }
   
   a {
     color: #000;
   }
   
+summary {
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background-color: rgb(7, 185, 255);
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
   /* header */
   
   .header {
@@ -218,20 +228,36 @@ body {
     z-index: 5;
 }
 
-/* dich vụ */
-.tt 
-{
-    font-family: Helvetica, sans-serif;
-    padding-top: 300px;
-    text-align: center;
-    color:#ffffff
+/* dịch vụ */
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
 }
-.dich_vu {
-    font-family: Helvetica, sans-serif;
-    text-align: center;
-    margin: 40px 0 40px;
-    text-align: center;
-    font-size: 10px;
-    color: #ffffff;
-  }
+p {
+  text-align: left;
+}
+/* Định dạng các button mô tả cho nội dung*/
+button.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
 
+/* Thêm màu nền cho button được active hoặc được hover*/
+button.accordion.active, button.accordion:hover {
+  background-color: #ddd;
+}
+
+/* Thiết lập cho phần nội dung, mặc định sẽ được ẩn đi */
+div.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+}
