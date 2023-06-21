@@ -1,83 +1,166 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  
-  <head>
-    <meta charset="utf-8">
-    <title>Đặt phòng</title>
-    <link rel="stylesheet" href="css/master.css">
-    <link rel="import" href="Header.html">
-    <link rel="import" href="Footer.html">
-  </head>
 
-  <body>
-    <iframe src="Header.html" width="100%" height="200px">
-    </iframe>
-    
-    <h2>Các loại phòng</h2>
-    <div>
-      <a href="SingleRoom.html">Single Room</a>
+<head>
+  <meta charset="utf-8">
+  <title>Đặt phòng</title>
+  <link rel="stylesheet" href="css/DatPhong.css">
+  <link rel="import" href="ThanhToan.html">
+</head>
+
+<body>
+  <h1>Đặt phòng</h1>
+  <a href="DanhSachPhong.html">
+    <h2>Danh sách các phòng</h2>
+  </a>
+
+
+  <div class="container">
+    <form action="/action_page.php">
+      <div class="row">
+
+        <div class="col-25">
+          <label for="hoten">Họ tên</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="hoten" id="hoten" placeholder="Nguyễn Văn A" class="input">
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-25">
+          <label for="email">Email</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="email" id="email" placeholder="nguyenvana@gmail.com" class="input">
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-25">
+          <label for="sdt">Số điện thoại</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="sdt" id="sdt" placeholder="0123456789" class="input">
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-25">
+          <label for="diachi">Địa chỉ</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="diachi" id="diachi" placeholder="Số 2 Lê Thanh Nghị..." class="input">
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-25">
+          <label for="checkin">Check-in</label>
+        </div>
+        <div class="col-75">
+          <input type="datetime-local" name="checkin" id="checkin" class="input">
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-25">
+          <label for="checkout">Check-out</label>
+        </div>
+        <div class="col-75">
+          <input type="datetime-local" name="checkout" id="checkout" class="input">
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-25">
+          <label for="soluongkhach">Số lượng người lớn</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="soluongkhach" id="soluongkhach" placeholder="1" class="input">
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-25">
+          <label for="soluongkhach">Số lượng trẻ em</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="soluongkhach" id="soluongkhach" placeholder="1" class="input">
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="kieuphong">Kiểu phòng</label>
+        </div>
+        <div class="col-75">
+          <select id="kieuphong" name="kieuphong">
+            <option value="single">Single Room</option>
+            <option value="twin">Twin Room</option>
+            <option value="double">Double Room</option>
+            <option value="family">Family Room</option>
+          </select>
+        </div>
+      </div>
       <br>
-      <a href="TwinRoom.html">Twin Room</a>
+      <div class="row">
+        <div class="col-25">
+          <label>Dịch vụ</label>
+        </div>
+        <div class="col-75">
+          <input type="checkbox" name="option1" value="option1"> Đặt đồ ăn lên phòng<br>
+          <input type="checkbox" name="option2" value="option2"> Giặt đồ<br>
+          <input type="checkbox" name="option3" value="option3"> Tổ chức sự kiện<br>
+          <input type="checkbox" name="option1" value="option1"> Đi tour<br>
+          <input type="checkbox" name="option2" value="option2"> Thuê xe<br>
+          <input type="checkbox" name="option3" value="option3"> Combo tour<br>
+        </div>
+      </div>
       <br>
-      <a href="DoubleRoom.html">Double Room</a>
-      <br>
-      <a href="FamilyRoom.html">Family Room</a>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="ghichu">Ghi chú</label>
+        </div>
+        <div class="col-75">
+          <textarea id="ghichu" name="ghichu" placeholder="1 khách là trẻ con" style="height:200px"></textarea>
+        </div>
+      </div>
+    </form>
+    <div class="row">
+      <button id="myBtn">Thanh toán</button>
     </div>
 
+  </div>
 
-    <h2>Đặt phòng</h2>
-    <div>
-      <label>Họ tên</label>
-      <br>
-      <input type="text" name="hoten" placeholder="Nguyễn Văn A" class="input">
-      <br>
-      <label>Email</label>
-      <br>
-      <input type="text" name="email" placeholder="nguyenvana@gmail.com" class="input">
-      <br>
-      <label>Số điện thoại</label>
-      <br>
-      <input type="text" name="sdt" placeholder="0123456789" class="input">
-      <br>
-      <label>Địa chỉ</label>
-      <br>
-      <input type="text" name="diachi" placeholder="Số 2 Lê Thanh Nghị..." class="input">
-      <br>
-      <label>Check-in</label>
-      <br>
-      <input type="datetime-local" name="checkin" class="input">
-      <br>
-      <label>Check-out</label>
-      <br>
-      <input type="datetime-local" name="checkout" class="input">
-      <br>
-      <label>Số lượng khách</label>
-      <br>
-      <input type="text" name="soluongkhach" placeholder="1" class="input">
-      <br>
-      <label>Kiểu phòng</label>
-      <br>
-      <select name="kieuphong">
-        <option value="single">Single Room</option>
-        <option value="twin">Twin Room</option>
-        <option value="double">Double Room</option>
-        <option value="family">Family Room</option>
-      </select>
-      <br>
-      <label>Ghi chú</label>
-      <br>
-      <input type="text" name="input" placeholder="1 khách là trẻ con" class="input">
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <iframe src="ThanhToan.html" style="width: 100%; height: 100%;"></iframe>
     </div>
-    <br>
+  </div>
+  <script src="js/DatPhong.js">
+  </script>
+  <script src="js/HeaderFooter.js">
+  </script>
+</body>
 
-    <div>
-      <button type="button" name="datphong" class="button"> Đặt phòng</button>
-    </div>
-    <br>
-
-    <iframe src="Footer.html" width="100%" height="200px">
-    </iframe>
-    <script src="js/Hotel.js">
-    </script>
-  </body>
 </html>
