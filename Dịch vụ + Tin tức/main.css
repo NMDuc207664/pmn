@@ -2,6 +2,8 @@ body {
     margin: 0;
     font-family: Helvetica, sans-serif;
     text-indent: 10px;
+    background-image: url('../image/ảnh.jpg');
+    background-size: 100% 100%;
   }
   
   a {
@@ -111,7 +113,7 @@ summary {
   }
   
   .header .menu-btn:checked ~ .menu {
-    max-height: 240px;
+    max-height: 200px;
   }
   
   .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -230,13 +232,14 @@ summary {
 
 /* dịch vụ */
 .container {
-  width: 70%;
+  width: 50%;
   margin: auto;
-  text-align: left;
+  text-align: center;
 }
 
-h3 {
-  text-align: left;
+h1 {
+  color:rgb(182, 217, 244);
+  text-align: center;
 }
 
 p {
@@ -244,15 +247,20 @@ p {
 }
 /* Định dạng các button mô tả cho nội dung*/
 button.accordion {
-  background-color: #ffffff;
-  color: #444;
+
+  background-color: rgb(182, 217, 244);
+  color: #000000;
   cursor: pointer;  
   padding: 1px;
-  width: 80px;
-  text-align: left;
+  height: 20px;
+  width: 720px;
+  text-align: center;
   border: none;
   outline: none;
   transition: 0.4s;
+  font-size : 18px;
+  font-style: italic;
+  
 }
 
 /* Thêm màu nền cho button được active hoặc được hover*/
@@ -262,7 +270,43 @@ button.accordion.active, button.accordion:hover {
 
 /* Thiết lập cho phần nội dung, mặc định sẽ được ẩn đi */
 div.panel {
+ 
   padding: 0 18px;
-  background-color: white;
+  background-color: rgb(182, 217, 244);
   display: none;
+  margin: 0px 20px 20px 20px;
+ 
 }
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  }
+
+/* Tin tức */
+.content::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+#left, #right {
+  width: 15%;
+  float: left;
+  box-sizing: border-box;
+  padding: 150px 30px;
+
+}
+
+#content {
+  float: left;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 200px 30px;
+  width: 70%;
+  background-color: aliceblue;
+
+}
+
