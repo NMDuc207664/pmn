@@ -113,3 +113,45 @@
     float: right;
 }
 
+h1 {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+body {
+  background: linear-gradient(-20deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 100% 100%;
+  background-image: url('/DatPhong/img/background.jpg');
+  font-family:'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+#dat-phong {
+  text-align: center;
+  left: 10%;
+  transform: translate(-50%, 0%);
+  background-color: rgba(0, 0, 0, 0.8); 
+  width: 200px;
+  height: 70px;
+  line-height: 70px;
+  position: relative;
+}
+
+#danh-sach-phong {
+  text-align: center;
+  font-style: italic;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: rgba(0, 0, 0, 0.7); 
+  width: 300px;
+  height: 70px;
+  line-height: 70px;
+  position: relative;
+}
