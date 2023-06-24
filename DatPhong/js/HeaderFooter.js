@@ -17,7 +17,7 @@ xhr.onreadystatechange = function () {
     document.getElementById("header").innerHTML = this.responseText;
   }
 };
-xhr.open("GET", "header.html", true);
+xhr.open("GET", "../../HeaderFooter/header.html", true);
 xhr.send();
 
 // Load the footer
@@ -27,12 +27,12 @@ xhr.onreadystatechange = function () {
     document.getElementById("footer").innerHTML = this.responseText;
   }
 };
-xhr.open("GET", "footer.html", true);
+xhr.open("GET", "../../HeaderFooter/footer.html", true);
 xhr.send();
 
 var styles = `
 body {
-  margin-top: 70px;
+  margin-top: 80px;
   margin-left: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
@@ -45,6 +45,7 @@ a {
 /* header */
 .header {
   font-family: Helvetica, sans-serif;
+  font-size: 20px;
   top: 0;
   left: 0;
   right: 0;
@@ -56,7 +57,7 @@ a {
   position: fixed;
   width: 100%;
   z-index: 3;
-  height: 60px;
+  height: 65px;
 }
 
 .header ul {
