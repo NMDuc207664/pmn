@@ -4,18 +4,69 @@
 <head>
     <meta charset="utf-8">
     <title>Liên hệ</title>
-    <link rel="stylesheet" href="css/DatPhong.css">
-    <link rel="import" href="ThanhToan.html">
+    <link rel="stylesheet" href="LienHe.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 </head>
 
 <body>
     <div id="lien-he">
         <h1>Liên hệ</h1>
     </div>
+    <div class="flex-container">
+        <div class="container">
+            <form action="action_page.php">
 
-    <script src="js/DatPhong.js">
+                <label for="ten">Họ tên</label>
+                <input type="text" id="ten" name="ten" placeholder="Nguyễn Văn A">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="nguyenvana@gmail.com">
+
+                <label for="sdt">SĐT</label>
+                <input type="text" id="sdt" name="sdt" placeholder="0123456789">
+
+                <label for="chude">Chủ đề</label>
+                <input type="text" id="chude" name="chude" placeholder="Hỗ trợ sinh viên Bách Khoa">
+
+                <label for="noidung">Nội dung</label>
+                <textarea id="noidung" name="noidung" placeholder="Tiền học kỳ này mình 30tr bạn thương tình giảm giá." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="container2">
+                <h2>Thông tin liên hệ</h2>
+                <div class="contact">
+                    <span>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <span>
+                        Số 1, phố Trần Duy Hưng, Hà Nội
+                    </span>
+                </div>
+                <div class="contact">
+                    <span>
+                        <i class="fas fa-phone-alt"></i>
+                    </span>
+                    <span>
+                        +84 545 37534 48
+                    </span>
+                </div>
+                <div class="contact">
+                    <span>
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span>
+                        info@domain.com
+                    </span>
+                </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <script src="LienHe.js">
     </script>
-    <script src="js/HeaderFooter.js">
+    <script src="../HeaderFooter/HeaderFooter.js">
     </script>
 </body>
 
