@@ -243,6 +243,7 @@ h1 {
 }
 
 p {
+  line-height: 30px;
   text-align: left;
 }
 /* Định dạng các button mô tả cho nội dung*/
@@ -252,7 +253,7 @@ button.accordion {
   color: #000000;
   cursor: pointer;  
   padding: 1px;
-  height: 20px;
+  height: 40px;
   width: 720px;
   text-align: center;
   border: none;
@@ -260,6 +261,7 @@ button.accordion {
   transition: 0.4s;
   font-size : 18px;
   font-style: italic;
+  line-height: 20px;
   
 }
 
@@ -310,3 +312,17 @@ img {
 
 }
 
+h2 {
+  font-size: 13px;
+  text-align: center;
+}
+
+table {
+  border-spacing: 20px;
+}
+
+h5 {
+  text-align: center;
+  color : black;
+  font-size : 50px;
+}
