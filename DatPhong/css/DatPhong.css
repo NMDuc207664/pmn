@@ -125,12 +125,15 @@ h2 {
   text-decoration: none;
 }
 
+#mainbody {
+  font-family:'Times New Roman', Times, serif;
+  font-size: large;
+}
+
 body {
   background: linear-gradient(-20deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 100% 100%;
   background-image: url('/DatPhong/img/background.jpg');
-  font-family:'Times New Roman', Times, serif;
-  font-size: large;
 }
 
 #dat-phong {
