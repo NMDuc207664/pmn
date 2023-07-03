@@ -71,7 +71,6 @@ CREATE TABLE [dbo].[PhieuDatPhong](
 	[NgayDenNhan] [date] NOT NULL,
 	[NgayTra] [date] NOT NULL,
 	[MaLoaiPhong] [varchar](5) NOT NULL,
-	[SoLuongPhong] [tinyint] NOT NULL,
 	[MaDichVu] [varchar](5) NULL,
 	[GhiChu] [nvarchar](300) NULL,
  CONSTRAINT [PK_Khách Hàng] PRIMARY KEY CLUSTERED 
