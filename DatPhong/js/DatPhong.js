@@ -65,19 +65,3 @@ document.getElementById("myBtn").addEventListener("click", function(event) {
     // Print data to console
     console.log(data);
   });
-  
-
-    // // Create JSON object
-    // let data = {
-    //   TenKhachHang: hoten,
-    //   SDT: sdt,
-    //   Email: email,
-    //   DiaChi: diachi,
-    //   SoNguoiLon: soluongkhach,
-    //   SoTreEm: soluongtreem,
-    //   NgayDenNhan: checkin,
-    //   NgayTra: checkout,
-    //   MaLoaiPhong: kieuphong,
-    //   //MaDichVu: dichvu,
-    //   GhiChu: ghichu
-    // };
