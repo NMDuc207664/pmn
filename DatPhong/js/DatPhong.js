@@ -24,11 +24,18 @@ window.onclick = function (event) {
     }
 }
 
-  
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+
 document.getElementById("myBtn").addEventListener("click", function(event) {
     event.preventDefault();
   
     // Collect data from form
+    let maphieu = getRandomInt(10000, 90000);
     let hoten = document.getElementById("hoten").value;
     let email = document.getElementById("email").value;
     let sdt = document.getElementById("sdt").value;
@@ -49,6 +56,7 @@ document.getElementById("myBtn").addEventListener("click", function(event) {
   
     // Create JSON object
     let data = {
+      MaPhieu: maphieu,
       TenKhachHang: hoten,
       SDT: sdt,
       Email: email,
