@@ -451,7 +451,6 @@ CREATE PROC INSERT_PhieuDatPhong
 @NgayDenNhan date,
 @NgayTra date,
 @MaLoaiPhong VARCHAR(5),
-@SoLuongPhong tinyint,
 @MaDichVu VARCHAR(5),
 @GhiChu NVARCHAR(300),
 @RESULT NVARCHAR(100) output
@@ -473,7 +472,7 @@ BEGIN
 		SET @RESULT = N'Không tồn tại mã dịch vụ '+@MaDichVu;
 	ELSE
 		BEGIN
-			INSERT INTO PhieuDatPhong VALUES (@MaPhieu,@TenKhachHang,@SDT,@Email,@DiaChi,@SoNguoiLon,@SoTreEm,@NgayDenNhan,@NgayTra,@MaLoaiPhong,@SoLuongPhong,@MaDichVu,@GhiChu);
+			INSERT INTO PhieuDatPhong VALUES (@MaPhieu,@TenKhachHang,@SDT,@Email,@DiaChi,@SoNguoiLon,@SoTreEm,@NgayDenNhan,@NgayTra,@MaLoaiPhong,@MaDichVu,@GhiChu);
 			SELECT @error = @@ERROR, @id = SCOPE_IDENTITY(); 
 			IF @error = 0
 				SET @RESULT = N'Đã tạo dữ liệu cho mã phiếu là: '+@MaPhieu;
@@ -496,7 +495,6 @@ CREATE PROC UPDATE_PhieuDatPhong
 @NgayDenNhan date,
 @NgayTra date,
 @MaLoaiPhong VARCHAR(5),
-@SoLuongPhong tinyint,
 @MaDichVu VARCHAR(5),
 @GhiChu NVARCHAR(300),
 @RESULT NVARCHAR(100) output
@@ -520,7 +518,7 @@ BEGIN
 		BEGIN
 			UPDATE PhieuDatPhong SET TenKhachHang=@TenKhachHang, SDT=@SDT, Email=@Email, DiaChi=@DiaChi, 
 								SoNguoiLon=@SoNguoiLon, SoTreEm=@SoTreEm, NgayDenNhan=@NgayDenNhan, NgayTra=@NgayTra,
-								MaLoaiPhong=@MaLoaiPhong, SoLuongPhong=@SoLuongPhong, MaDichVu=@MaDichVu, GhiChu=@GhiChu WHERE MaPhieu = @KEY;
+								MaLoaiPhong=@MaLoaiPhong, MaDichVu=@MaDichVu, GhiChu=@GhiChu WHERE MaPhieu = @KEY;
 			SELECT @error = @@ERROR, @id = SCOPE_IDENTITY(); 
 			IF @error = 0
 				SET @RESULT = N'Đã cập nhật thông tin với mã phiếu: '+@KEY;
