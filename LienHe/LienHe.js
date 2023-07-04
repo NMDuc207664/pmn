@@ -8,13 +8,25 @@ var form = document.getElementById('myForm');
 form.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    // Send the email using EmailJS
-    emailjs.sendForm('service_v7xk0fa', 'template_qobsj6a', this)
-        .then(function(response) {
-            alert('Gửi thông tin thành công');
-        }, function(error) {
-            alert('Gửi thông tin thất bại, xin vui lòng thử lại');
-        });
+    // Show a confirmation dialog before proceeding
+    swal({
+        title: "Xác nhận",
+        text: "Bạn có muốn gửi thông tin không?",
+        icon: "warning",
+        buttons: ["Huỷ", "Tiếp tục"],
+        dangerMode: true,
+    })
+    .then((willSubmit) => {
+        if (willSubmit) {
+            // Send the email using EmailJS
+            emailjs.sendForm('service_v7xk0fa', 'template_qobsj6a', this)
+                .then(function(response) {
+                    swal("Gửi thông tin thành công");
+                }, function(error) {
+                    swal("Gửi thông tin thất bại, xin vui lòng thử lại");
+                });
+        } else {
+            swal("Đã huỷ thành công");
+        }
+    });
 });
-
-
