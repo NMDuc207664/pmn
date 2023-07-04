@@ -14,7 +14,7 @@
     </div>
     <div class="flex-container">
         <div class="container">
-            <form action="action_page.php">
+            <form id="myForm">
 
                 <label for="ten">Họ tên</label>
                 <input type="text" id="ten" name="ten" placeholder="Nguyễn Văn A">
@@ -31,7 +31,7 @@
                 <label for="noidung">Nội dung</label>
                 <textarea id="noidung" name="noidung" placeholder="Tiền học kỳ này mình 30tr bạn thương tình giảm giá." style="height:200px"></textarea>
 
-                <input type="submit" value="Submit">
+                <input type="submit" value="Gửi">
             </form>
         </div>
         <div class="container2">
@@ -64,8 +64,10 @@
     </div>
     <br>
     <br>
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <script src="LienHe.js">
     </script>
+    
     <script src="../HeaderFooter/HeaderFooter.js">
     </script>
 </body>
