@@ -88,6 +88,24 @@ document.getElementById("myBtn").addEventListener("click", function(event) {
       MaDichVu: dichvu,
       GhiChu: ghichu
     };
+
+        // Send data to API endpoint 
+  fetch('http://localhost:8090/api/PhieuDatPhong', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  })
+  .then(response => response.json())
+  .then(result => {
+    // Handle the response from the API if needed
+    console.log(result);
+  })
+  .catch(error => {
+    // Handle any errors that occur during the request
+    console.error(error);
+  });
   
     // Print data to console
     console.log(data);
