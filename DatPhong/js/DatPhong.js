@@ -9,7 +9,25 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function () {
-    modal.style.display = "block";
+  // Get all input elements
+  var inputs = document.querySelectorAll('.input');
+
+  // Check if all input fields are not empty
+  var allFilled = true;
+  for (var i = 0; i < inputs.length; i++) {
+      if (inputs[i].name !== 'dichvu' && inputs[i].name !== 'ghichu' && inputs[i].value === '') {
+          allFilled = false;
+          break;
+      }
+  }
+
+  if (allFilled) {
+      // Open the modal
+      modal.style.display = "block";
+  } else {
+      // Show an alert message
+      swal("Xin hãy điền đầy đủ thông tin");
+  }
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -23,6 +41,7 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
 
 function getRandomInt(min, max) {
   min = Math.ceil(min);
